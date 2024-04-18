@@ -1,0 +1,8 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+scrape_configs:
+  - job_name: 'prom-target'
+    static_configs:
+      - targets: ['193.123.87.133:9100']  # Replace with your target address and port
+
